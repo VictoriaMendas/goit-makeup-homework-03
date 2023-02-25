@@ -1,21 +1,45 @@
-body {
-  font-family: "Roboto", sans-serif;
- color: var(--main-title-color);
-}
-
 :root {
   --main-title-color: #2e2f42;
   --secondary-title-color: #434455;
   --accent-color: #f4f4f4;
   --thirdary-title-color: #ffffff;
-  --fourdary-title-color: #e7e9fc; 
-  --back-color-title:  #4d5ae5;
+  --fourdary-title-color: #e7e9fc;
+  --back-color-title: #4d5ae5;
   --background-color: #404bbf;
-  --secondary-font: 'Raleway', sans-serif;
-
+  --secondary-font: "Raleway", sans-serif;
+  --basic-margin: 24px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.conteiner {
+  width: 1500px;
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+ box-sizing: bording-box;
+  padding: 0 15px;
+  
+}
+img {
+  display: block;
+  max-width: 100%;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-title-color);
+}
 .link {
   list-style: none;
 }
@@ -29,7 +53,7 @@ body {
 }
 .button-link:hover,
 .button-link:focus {
-  color:var(--thirdary-title-color);
+  color: var(--thirdary-title-color);
   background: var(--background-color);
 }
 
@@ -47,7 +71,12 @@ body {
 }
 
 /*------Head------*/
-
+.header {
+  padding: 24px 156px;
+}
+.conteiner-head {
+  padding: 188px 473px 292px;
+}
 .logo-studio {
   font-family: var(--secondary-font);
   font-weight: 800;
@@ -67,15 +96,16 @@ body {
   font-size: 18px;
   line-height: 1.33;
 }
+
 .header-navigation {
+  padding: 24px, 156px;
 }
 .header-head:hover,
 .header-head:focus {
-color: var(--background-color);
- 
-  }
+  color: var(--background-color);
+}
 
-.header-head{
+.header-head {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -90,7 +120,6 @@ color: var(--background-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
-  
 }
 
 .item {
@@ -102,27 +131,44 @@ color: var(--background-color);
   letter-spacing: 0.02em;
   color: var(--thirdary-title-color);
 }
-.item-button-title{
+.item-button-title {
   font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-letter-spacing: 0.04em;
-color: var(--thirdary-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--thirdary-title-color);
 }
-.button-style{
-  background: #404BBF;
+.button-style {
+  background: #404bbf;
 }
- .button-style:hover{
-  background: #4D5AE5;
+.button-style:hover {
+  background: #4d5ae5;
+}
+.cont-btn: {
+  padding: 356px 635px 188px;
 }
 .color {
   background: var(--background-color);
 }
 /*------Hero------*/
+
 .hero {
+ 
+}
+.cont-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  justify-content: center;
+  margin: 120px 156px 125px;
+  flex-basis: calc((100% / 4) );
+  
+  
+  
 }
 .hero-name {
   font-weight: 500;
@@ -131,10 +177,16 @@ color: var(--thirdary-title-color);
   letter-spacing: 0.02em;
   color: var(--main-title-color);
   text-decoration: none;
+  margin-bottom: 8px;
 }
+ 
 .hero-list {
 }
 .hero-item {
+  margin-right: var(--basic-margin);
+ 
+  flex-wrap: wrap;
+
 }
 .hero-subtitle {
   font-weight: 400;
@@ -142,6 +194,8 @@ color: var(--thirdary-title-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
+ 
+ 
 }
 .pic {
   font-size: 36px;
@@ -149,6 +203,11 @@ color: var(--thirdary-title-color);
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--main-title-color);
+}
+.cont-img {
+  
+ padding: 125px 558px;
+ 
 }
 /*------Team------*/
 .team {
@@ -184,7 +243,7 @@ footer {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  letter-spacing: 0.03em;s
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -203,13 +262,12 @@ footer {
 .btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;D
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--back-color-title);
 }
 /*----Images-portfolio----*/
 .images {
-
 }
 .text {
   font-weight: 500;
@@ -225,5 +283,3 @@ footer {
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
 }
- 
- 
