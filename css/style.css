@@ -268,6 +268,9 @@ gap: var(--basic-margin);
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  padding-top: 32px;
+  padding-bottom: 8px;
+  padding-left: 60px;
 }
 .team-quote {
   font-weight: 400;
@@ -275,9 +278,11 @@ gap: var(--basic-margin);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
+  padding-left: 60px;
 }
 .team-conteiner {
-
+margin-bottom: 119px;
+padding-right: var(--basic-margin);
 }
 .card-conteiner {
   display: flex;
@@ -287,7 +292,9 @@ gap: var(--basic-margin);
 footer {
   background: var(--main-title-color);
 }
-
+.footer-cont {
+  padding: 100px 56px;
+}
 .logo-color {
   font-family: var(--secondary-font);
   font-weight: 800;
